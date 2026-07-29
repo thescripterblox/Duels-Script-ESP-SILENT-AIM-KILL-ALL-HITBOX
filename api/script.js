@@ -17,9 +17,8 @@ export default async function handler(req, res) {
     } catch (error) {
       return res.status(500).send("Error al cargar el script.");
     }
-  } else {
-    // Si un curioso entra desde Google Chrome, lo redirige a tu TikTok
-    res.writeHead(302, { Location: 'https://www.tiktok.com/@jesus_acm4' });
-    res.end();
+    } else {
+    // Redirigir directamente al TikTok si entran desde el navegador
+    res.setHeader('Location', 'https://www.tiktok.com/@jesus_acm4');
+    return res.status(302).end();
   }
-}
