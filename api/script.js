@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   if (isRoblox) {
     // Pon aquí tu enlace raw real de GitHub entre las comillas
-    const githubRawUrl = 'AQUI_TU_ENLACE_RAW_DE_GITHUB';
+    const githubRawUrl = 'https://raw.githubusercontent.com/thescripterblox/Duels-Script-ESP-SILENT-AIM-KILL-ALL-HITBOX/refs/heads/main/DUELS%20SCRIPT%20ROBLOX';
 
     try {
       const response = await fetch(githubRawUrl);
